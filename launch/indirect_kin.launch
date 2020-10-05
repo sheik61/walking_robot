@@ -1,0 +1,20 @@
+<launch>
+<node name="primary_left_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="primary_left_leg"/>
+</node>
+<node name="primary_right_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="primary_right_leg"/>
+</node>
+<node name="secondary_left_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="secondary_left_leg"/>
+</node>
+<node name="secondary_right_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="secondary_right_leg"/>
+</node>
+<node name="tertiary_left_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="tertiary_left_leg"/>
+</node>
+<node name="tertiary_right_leg_controller" pkg="robot_walker" type="indirect_kinematics_service.py">
+	<param name="group_name" value="tertiary_right_leg"/>
+</node>
+</launch>

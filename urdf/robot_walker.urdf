@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<robot name="one_legged_robot_walker">
+    <material name="green">
+        <color rgba="0 1 0 1"/>
+    </material>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+    <material name= "red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+<!-- Link for main body -->
+  
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="2.0 1.0 0.55" />
+      </geometry>
+       <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+    </visual>
+  </link>
+
+  
+
+<!-- Primary left leg section -->
+
+  <link name ="pectoral_left_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_left_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+<!-- Secondary left leg section -->
+
+  <link name ="pectoral_left_secondary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_left_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_left_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_left_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_left_secondary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+  <!-- Tertiary left leg section -->
+
+  <link name ="pectoral_left_Tertiary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_left_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_left_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_left_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_left_Tertiary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+
+<!-- Primary right leg section -->
+
+  <link name ="pectoral_right_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_right_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_right_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_right_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_right_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+<!-- Secondary right leg section -->
+
+  <link name ="pectoral_right_secondary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_right_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_right_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_right_secondary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_right_secondary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+  <!-- Tertiary right leg section -->
+
+  <link name ="pectoral_right_Tertiary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_right_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_right_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_right_Tertiary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_right_Tertiary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+<!-- The different configurations of the joints for primary left leg-->
+
+<joint name = "pl_pectoral" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_left_primary"/>
+  <origin xyz="0.8 0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus" type = "revolute">
+  <parent link ="pectoral_left_primary"/>
+    <child link = "humerus_left_primary"/>
+    <origin xyz="0 0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius" type = "revolute">
+  <parent link ="humerus_left_primary"/>
+    <child link = "radius_left_primary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal" type = "revolute">
+  <parent link ="radius_left_primary"/>
+    <child link = "carpal_left_primary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot" type = "revolute">
+  <parent link ="carpal_left_primary"/>
+    <child link = "foot_left_primary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<!-- The different configurations of the joints for secondary left leg-->
+
+<joint name = "pl_pectoral_secondary" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_left_secondary"/>
+  <origin xyz="0.15 0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus_secondary" type = "revolute">
+  <parent link ="pectoral_left_secondary"/>
+    <child link = "humerus_left_secondary"/>
+    <origin xyz="0 0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius_secondary" type = "revolute">
+  <parent link ="humerus_left_secondary"/>
+    <child link = "radius_left_secondary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal_secondary" type = "revolute">
+  <parent link ="radius_left_secondary"/>
+    <child link = "carpal_left_secondary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot_secondary" type = "revolute">
+  <parent link ="carpal_left_secondary"/>
+    <child link = "foot_left_secondary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<!-- The different configurations of the joints for Tertiary left leg-->
+
+<joint name = "pl_pectoral_Tertiary" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_left_Tertiary"/>
+  <origin xyz="-0.8 0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus_Tertiary" type = "revolute">
+  <parent link ="pectoral_left_Tertiary"/>
+    <child link = "humerus_left_Tertiary"/>
+    <origin xyz="0 0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius_Tertiary" type = "revolute">
+  <parent link ="humerus_left_Tertiary"/>
+    <child link = "radius_left_Tertiary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal_Tertiary" type = "revolute">
+  <parent link ="radius_left_Tertiary"/>
+    <child link = "carpal_left_Tertiary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot_Tertiary" type = "revolute">
+  <parent link ="carpal_left_Tertiary"/>
+    <child link = "foot_left_Tertiary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<!-- The different configurations of the joints for primary right leg-->
+
+<joint name = "pl_pectoral_right" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_right_primary"/>
+  <origin xyz="0.8 -0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus_right" type = "revolute">
+  <parent link ="pectoral_right_primary"/>
+    <child link = "humerus_right_primary"/>
+    <origin xyz="0 -0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius_right" type = "revolute">
+  <parent link ="humerus_right_primary"/>
+    <child link = "radius_right_primary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal_right" type = "revolute">
+  <parent link ="radius_right_primary"/>
+    <child link = "carpal_right_primary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot_right" type = "revolute">
+  <parent link ="carpal_right_primary"/>
+    <child link = "foot_right_primary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<!-- The different configurations of the joints for secondary right leg-->
+
+<joint name = "pl_pectoral_right_secondary" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_right_secondary"/>
+  <origin xyz="0.15 -0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus_right_secondary" type = "revolute">
+  <parent link ="pectoral_right_secondary"/>
+    <child link = "humerus_right_secondary"/>
+    <origin xyz="0 -0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius_right_secondary" type = "revolute">
+  <parent link ="humerus_right_secondary"/>
+    <child link = "radius_right_secondary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal_right_secondary" type = "revolute">
+  <parent link ="radius_right_secondary"/>
+    <child link = "carpal_right_secondary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot_right_secondary" type = "revolute">
+  <parent link ="carpal_right_secondary"/>
+    <child link = "foot_right_secondary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<!-- The different configurations of the joints for Tertiary right leg-->
+
+<joint name = "pl_pectoral_right_Tertiary" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_right_Tertiary"/>
+  <origin xyz="-0.8 -0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus_right_Tertiary" type = "revolute">
+  <parent link ="pectoral_right_Tertiary"/>
+    <child link = "humerus_right_Tertiary"/>
+    <origin xyz="0 -0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius_right_Tertiary" type = "revolute">
+  <parent link ="humerus_right_Tertiary"/>
+    <child link = "radius_right_Tertiary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal_right_Tertiary" type = "revolute">
+  <parent link ="radius_right_Tertiary"/>
+    <child link = "carpal_right_Tertiary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot_right_Tertiary" type = "revolute">
+  <parent link ="carpal_right_Tertiary"/>
+    <child link = "foot_right_Tertiary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+</robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

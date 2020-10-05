@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<robot name="one_legged_robot_walker">
+    <material name="green">
+        <color rgba="0 1 0 1"/>
+    </material>
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+    <material name= "red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+
+<!-- Link for main body -->
+  
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="2.0 1.0 0.55" />
+      </geometry>
+       <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+    </visual>
+  </link>
+
+<!-- Primary left leg section -->
+
+  <link name ="pectoral_left_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.1 0.25" />
+      </geometry>
+         <material name="green"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      </visual>
+    </link>
+  
+  <link name ="humerus_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.85" radius="0.065"/>
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+    </visual>
+  </link>
+
+  <link name ="radius_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.45" radius="0.065"/>
+      </geometry>
+      <material name = "red"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.08"/>
+    </visual>
+  </link>
+
+  <link name ="carpal_left_primary">
+    <visual>
+      <geometry>
+        <cylinder length="0.25" radius="0.065"/>
+      </geometry>
+      <material name = "green"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.06"/>
+    </visual>
+  </link>
+
+  <link name ="foot_left_primary">
+    <visual>
+      <geometry>
+         <box size="0.2 0.2 0.05" />
+      </geometry>
+      <material name = "blue"/>
+      <origin rpy="0 0 0" xyz="0.02 0 -0.02"/>
+    </visual>
+  </link>
+
+<!-- The different configurations of the joints -->
+
+<joint name = "pl_pectoral" type ="revolute">
+  <parent link ="base_link"/>
+  <child link="pectoral_left_primary"/>
+  <origin xyz="0.8 0.5 0"/>
+     <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
+  </joint>
+
+<joint name = "pl_humerus" type = "revolute">
+  <parent link ="pectoral_left_primary"/>
+    <child link = "humerus_left_primary"/>
+    <origin xyz="0 0.05 0"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="1" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_radius" type = "revolute">
+  <parent link ="humerus_left_primary"/>
+    <child link = "radius_left_primary"/>
+    <origin xyz="0 0 -0.875"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_carpal" type = "revolute">
+  <parent link ="radius_left_primary"/>
+    <child link = "carpal_left_primary"/>
+    <origin xyz="0 0 -0.325"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+<joint name = "pl_foot" type = "revolute">
+  <parent link ="carpal_left_primary"/>
+    <child link = "foot_left_primary"/>
+    <origin xyz="0 0 -0.2"/>
+     <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-1" upper="0" velocity="0.5"/>
+</joint>
+
+</robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
